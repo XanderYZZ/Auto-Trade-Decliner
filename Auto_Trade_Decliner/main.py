@@ -93,7 +93,7 @@ while True:
             description = "Giving: " + givingListText + " | Receiving: " + receivingListText
 
             Webhook.sendWebhook(
-                "Trade with " + opposingUsername + ",  AKA: " + opposingDisplayName + ", UserID: " + opposingUserID, 
+                "Trade with " + opposingUsername + ",  AKA: " + opposingDisplayName + ", UserID: " + str(opposingUserID), 
                 description,
                 opposingUsername
             )
