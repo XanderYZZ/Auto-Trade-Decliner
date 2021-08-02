@@ -26,4 +26,7 @@ class Rolimons:
             time.sleep(60*30)
 
     def __init__(self):
+        # Preventing the race condition by collecting it once before making a new thread
+        self.setItems()
+
         threading.Thread(target = self.main).start()
