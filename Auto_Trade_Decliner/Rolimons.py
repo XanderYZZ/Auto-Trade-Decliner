@@ -15,6 +15,8 @@ class Rolimons:
 
         if response.ok:
             self.cachedItems = response.json()["items"]
+        else:
+            print("Could not retrieve Rolimons item data")
 
     # Init / Main
     def main(self):
